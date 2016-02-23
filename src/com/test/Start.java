@@ -11,7 +11,7 @@ public class Start {
 		try {
 			IHello hello = new IHelloImpl();
 			 LocateRegistry.createRegistry(1099);  
-			Naming.rebind("rmi://localhost:1111/hello", hello);
+			Naming.rebind("rmi://localhost:1099/hello", hello);
 			System.out.println("Ready Go...................");
 		} catch (RemoteException e) {
 			e.printStackTrace();
