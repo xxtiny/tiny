@@ -12,7 +12,7 @@ public class Start {
 			IHello hello = new IHelloImpl();
 			 LocateRegistry.createRegistry(1099);  
 			Naming.rebind("rmi://localhost:1099/hello", hello);
-			System.out.println("Ready...................");
+			System.out.println("Ready Go...................");
 		} catch (RemoteException e) {
 			e.printStackTrace();
 		} catch (MalformedURLException e) {
